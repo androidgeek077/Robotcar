@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SplashScreenActivity">
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+
+        android:id="@+id/appNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_bhaina"
+        android:text="Robot Car"
+        android:textSize="26sp"
+        app:fontFamily="@font/baloo_bhai" />
+
+    <TextView
+        android:id="@+id/mSlogenTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_bhaina"
+        android:text="NOTHING IS CLEAN IN ROBOT CAR"
+        app:fontFamily="@font/baloo_bhaina" />
+</LinearLayout>

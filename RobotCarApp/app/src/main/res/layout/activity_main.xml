@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".1"
+        android:background="#000">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_my_cam"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+        <ImageView
+            android:layout_weight="1"
+
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_video_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+
+        <ImageView
+            android:id="@+id/mReadQRBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_scan" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_clock" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/StopwatchIV"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_stopwatch" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/cPreview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_steering_wheel"
+            android:layout_margin="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".1"
+        android:background="#000">
+        <ImageView
+            android:id="@+id/mSettingBtn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_wheel" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_headlight" />
+
+    </LinearLayout>
+</LinearLayout>
